@@ -1,0 +1,83 @@
+$primary: #00A3E7;
+$dark:  rgba(28,41,48,1.00);
+.result-cart-container{
+    background-color: white;
+    height: 500px;
+    width: 790px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    position: relative;
+    overflow-x: hidden;
+} 
+
+.outer-cart-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total-cart-container{
+    position: absolute;
+    top: 0;
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 790px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 10;
+  }
+
+  .cart-font{
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 25px;
+  }
+
+  .cart-ticket-display{
+    margin: 20px 60px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    height: 180px;
+    background-color: white;
+    border: 1px solid rgba($color: grey, $alpha: 0.4);
+  }
+
+  .button-checkout-style{
+    border-radius: 5px;
+    border: 1px solid $primary;
+    background-color: transparent; 
+    color: #00a3e7; 
+    cursor: pointer;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 40px;
+    margin-top: 40px;
+  }
+  
+  
+  .button-checkout-style:hover {
+    background-color: $primary; 
+    color: white;
+  }
+
+  .room-cart-display{
+    display: flex;
+    margin: 20px 60px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    max-height: 200px;
+    background-color: white;
+    border: 1px solid rgba($color: grey, $alpha: 0.4);
+  }
+
+
+  .cart-seat-container{
+    width: 345px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }

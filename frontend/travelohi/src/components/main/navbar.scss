@@ -1,0 +1,125 @@
+  .dropdown {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown:hover{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  .img-container:hover{
+    background-color: #f2f2f2;
+  }
+
+  .dropdown-toggle {
+    padding: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  button{
+    font-size: 15px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  p{ 
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    margin: 0;
+    z-index: 2;
+    padding: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+
+  .link{
+    padding: 10px;
+  }
+
+  .dropdown .language-container:hover{
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .search-recommendation{
+    position: absolute;
+    width: 480px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    top: 65px;
+    border-radius: 10px;
+    padding: 5px;
+    color:black;
+    border: 1px solid #ccc;
+    z-index: 2;
+  }
+  
+  
+  .p-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .p-container:hover{
+    background-color: #f2f2f2;
+  }
+
+  .link-searchbar-text{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .link-text-container{
+    padding: 6px;
+    margin-left: 68px;
+  }
+
+  
+
+
+  .p-text-container{
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+
+  .m-68px{
+    margin-left: 68px;
+  }

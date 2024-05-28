@@ -1,0 +1,192 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample server celler server.",
+        "title": "Swagger TPA JZ23-2",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "API Support",
+            "url": "http://www.swagger.io/support",
+            "email": "support@swagger.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "paths": {
+        "/api/admin/delete-promo": {
+            "delete": {
+                "description": "Delete a promo by PromoID",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Delete Promo",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Promo ID",
+                        "name": "PromoID",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Promo Deleted",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/admin/update-promo": {
+            "put": {
+                "description": "Update Existing Promo",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Update Existing Promo",
+                "parameters": [
+                    {
+                        "description": "Update Promo",
+                        "name": "promo",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/model.Promo"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/model.Promo"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/cart/add-flight-cart": {
+            "post": {
+                "description": "Create a new Flight Cart",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Create Flight Cart",
+                "parameters": [
+                    {
+                        "description": "Flight Cart details",
+                        "name": "promo",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/model.FlightCart"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/model.FlightCart"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/get-user": {
+            "get": {
+                "description": "get users",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "user"
+                ],
+                "summary": "List Users",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/model.Question"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "model.FlightCart": {
+            "type": "object",
+            "properties": {
+                "flightID": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "quantity": {
+                    "type": "integer"
+                },
+                "userID": {
+                    "type": "integer"
+                }
+            }
+        },
+        "model.Promo": {
+            "type": "object",
+            "properties": {
+                "promoBenefit": {
+                    "type": "integer"
+                },
+                "promoCode": {
+                    "type": "string"
+                },
+                "promoDescription": {
+                    "type": "string"
+                },
+                "promoID": {
+                    "type": "integer"
+                },
+                "promoName": {
+                    "type": "string"
+                },
+                "promoPicture": {
+                    "type": "string"
+                }
+            }
+        },
+        "model.Question": {
+            "type": "object",
+            "properties": {
+                "question": {
+                    "type": "string"
+                },
+                "questionID": {
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "OpenAPI",
+        "url": "https://swagger.io/resources/open-api/"
+    }
+}

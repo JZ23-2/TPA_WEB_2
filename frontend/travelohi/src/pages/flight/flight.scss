@@ -1,0 +1,370 @@
+.middle-manage-flight-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+
+  .outer-manage-flight-container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .inner-input-flight{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 20px;
+    gap: 5px;
+  }
+  
+  .search-flight-input{
+    width: 390px;
+    padding: 10px 0px 10px 5px;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+
+  .form-flight-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result-search-container{
+    width: 100vw;
+    display: flex;
+  }
+
+  
+
+  .filter-price{
+    display: flex;
+    flex-direction: column;;
+    margin : 30px 0px 20px 20px;
+  }
+
+  .font-filter{
+    font-weight: 700;
+  }
+
+  .checkbox-container{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    
+  }
+
+  .font-label{
+    font-size: 13px;
+  }
+
+  .ticket-display{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    height: 160px;
+    background-color: white;
+    border: 1px solid rgba($color: grey, $alpha: 0.4);
+  }
+
+  .title-ticket{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    width: 650px;
+    margin-left: 20px;
+  }
+
+  .destination-arrival-container{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .destination-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time-font{
+    font-size: 35px;
+  }
+
+  .flight-font{
+    font-size: 30px;
+  }
+
+  .place-font{
+    font-size: 15px;
+  }
+
+  .button-price-container{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin: 0px 20px 40px 20px;
+    margin-bottom: 40px;
+    height: 65px;
+  }
+
+  .price-font{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+
+  .inner-detail-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+
+ 
+
+    
+  .modal-flight-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+    
+  .choose-modal {
+    width: 24rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+
+  .text-flight-h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00a3e7;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .cinema-seats {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px; 
+    place-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .seat-row {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    color: #00A3E7;
+    width: 40px;
+    margin: 2px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .no-seat{
+    color: red;
+    width: 40px;
+    margin: 2px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .ticket-summary-font{
+    font-size: 20px;
+    font-weight: 700;
+    color: #00A3E7;
+  }
+
+
+  .button-detail-style{
+    border-radius: 5px;
+    border: 1px solid #00a3e7;
+    background-color: transparent; 
+    color: #00a3e7; 
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  .button-detail-style:hover {
+    background-color: #00a3e7; 
+    color: white;
+  }
+
+
+  .input-form-detail-container{
+    border-radius: 10px;
+    width: 685px;
+    max-height: 200px;
+    background-color: white;
+  }
+
+  .input-detail-container{
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #00A3E7;
+    width: 470px;
+  }
+
+
+  .button-detail-cart-style{
+    border-radius: 5px;
+    border: 1px solid #00a3e7;
+    background-color: transparent; 
+    color: #00a3e7; 
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    margin-top: 23px;
+  }
+
+
+  .button-detail-cart-style:hover {
+    background-color: #00a3e7; 
+    color: white;
+  }
+
+
+  .seat-container{
+    background-color: white;
+    width: 685px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow-y: scroll;
+  }
+
+  .seat-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #00A3E7;
+  }
+
+  .input-detail-seat-container{
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #00A3E7;
+    width: 630px;
+  }
+
+  .description-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .hotel-display{
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    height: 180px;
+    background-color: white;
+    border: 1px solid rgba($color: grey, $alpha: 0.4);
+  }
+
+  .text-hotel-h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .general-text{
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .facility-bubble{
+    background-color: rgba($color: grey, $alpha: 0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 10px;
+  }
+
+  .logo-burung{
+    width: 20px;
+    height: 20px;
+  }
+
+  .burung-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  .burung-text{
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .view-room-button{
+    width: 100px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    border: 1px solid #00a3e7;
+    background-color: transparent; 
+    color: #00a3e7; 
+    cursor: pointer;
+  }
+
+  .view-room-button:hover{
+    background-color: #00a3e7; 
+    color: white;
+  }
+
+  .view-room-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pagination-button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00a3e7;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+
+  .pagination-button:hover{
+    background-color: #00a3e7; 
+    color: white;
+  }
+
+  .pagination-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }

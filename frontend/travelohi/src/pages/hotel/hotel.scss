@@ -1,0 +1,29 @@
+.middle-manage-hotel-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.outer-manage-hotel-container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .search-hotel-input{
+    width: 850px;
+    padding: 10px 0px 10px 5px;
+    border-radius: 8px;
+    display: flex;
+  }
+
+.checkbox-filter{
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
